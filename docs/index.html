@@ -7,6 +7,50 @@
     <title>Document</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Creation Software</title>
+</head>
+<body>
+	<header>
+		<h1>Survey Creation Software</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Create Survey</a></li>
+				<li><a href="#">My Surveys</a></li>
+				<li><a href="#">Account Settings</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Create a new survey</h2>
+		<form>
+			<label for="survey-name">Survey Name:</label>
+			<input type="text" id="survey-name" name="survey-name">
+			<br>
+			<label for="survey-description">Survey Description:</label>
+			<textarea id="survey-description" name="survey-description"></textarea>
+			<br>
+			<label for="question-type">Question Type:</label>
+			<select id="question-type" name="question-type">
+				<option value="multiple-choice">Multiple Choice</option>
+				<option value="text-input">Text Input</option>
+				<option value="rating-scale">Rating Scale</option>
+			</select>
+			<br>
+			<label for="question-text">Question Text:</label>
+			<input type="text" id="question-text" name="question-text">
+			<br>
+			<input type="submit" value="Add Question">
+			<button>Save Survey</button>
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Survey Creation Software</p>
+	</footer>
+</body>
+</html>
     
 </body>
 </html>
