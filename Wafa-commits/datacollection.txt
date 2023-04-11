@@ -10,3 +10,6 @@ def collect_data():
                 f.write(line + '\n')  # write the line to the file
                 print(line) 
 
+data collect_data
+data 
+
