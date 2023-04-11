@@ -1,9 +1,7 @@
-import serial  # import the serial library for reading from the survey machine
+import serial  
 
-# set up the serial connection to the survey machine
 ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)  # replace with the appropriate serial port and baud rate
 
-# define a function to read data from the survey machine and store it in a file
 def collect_data():
     with open('survey_data.txt', 'a') as f:  # open a file for writing the survey data
         while True:
@@ -12,5 +10,5 @@ def collect_data():
                 f.write(line + '\n')  # write the line to the file
                 print(line)  # print the line to the console for debugging purposes
 
-# call the collect_data function to start reading data from the survey machine
+
 collect_data()
